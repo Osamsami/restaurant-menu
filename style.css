@@ -189,6 +189,21 @@ footer {
     display: block;
 }
 
+/* Order Summary Styles */
+#order-summary {
+    background-color: #F5E6D8;
+    border: 1px solid #C08A28;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 20px;
+    text-align: center;
+    color: #2E4635;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Responsive Styles for Mobile (under 600px) */
 @media (max-width: 600px) {
     nav ul {

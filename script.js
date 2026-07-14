@@ -61,10 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
             removeError(quantityInput);
         }
 
-        // If both validations pass, log success
+        // If both validations pass, show order summary
         if (isValid) {
-            console.log("Form is valid");
-            // Future logic for summarizing the order can go here
+            const summaryDiv = document.getElementById("order-summary");
+            const itemSelect = document.getElementById("menu-item");
+            const selectedItemText = itemSelect.options[itemSelect.selectedIndex].text;
+            
+            // Set the summary message
+            summaryDiv.innerHTML = `Thanks, ${nameValue}! Your order: ${quantityValue} x ${selectedItemText} is confirmed.`;
+            
+            // Make the summary visible
+            summaryDiv.classList.remove("hidden");
+            
+            // Reset the form fields
+            orderForm.reset();
         }
     });
 });
