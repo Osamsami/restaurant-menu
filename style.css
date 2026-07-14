@@ -181,6 +181,14 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Form Validation Styles */
+.error-message {
+    color: #C0392B;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
+
 /* Responsive Styles for Mobile (under 600px) */
 @media (max-width: 600px) {
     nav ul {
