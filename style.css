@@ -180,3 +180,24 @@ footer {
     color: #888;
     font-size: 0.9rem;
 }
+
+/* Responsive Styles for Mobile (under 600px) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    #menu article {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #menu article img {
+        width: 100%;
+        height: auto;
+    }
+
+    #order-form {
+        max-width: 90%;
+    }
+}
