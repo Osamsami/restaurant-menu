@@ -1,0 +1,182 @@
+/* Color Palette & Variables */
+:root {
+    --bg-color: #FAF6EF;
+    --heading-nav-color: #2E4635;
+    --body-text-color: #3A3A3A;
+    --price-accent-color: #C08A28;
+    --accent-hover: #B5451B;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--body-text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--heading-nav-color);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    color: #7a7a7a;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--heading-nav-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--accent-hover);
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Menu Section */
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+#menu article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.dish-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+.dish-info p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+.price {
+    color: var(--price-accent-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#menu article img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Form Section */
+#order-form {
+    max-width: 400px;
+    margin: 0 auto 60px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#order-form h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#order-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#order-form label {
+    font-weight: 500;
+    color: var(--heading-nav-color);
+}
+
+#order-form input,
+#order-form select {
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--body-text-color);
+}
+
+#order-form button {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--accent-hover);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#order-form button:hover {
+    background-color: #c75b33;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0dcd2;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9rem;
+}
