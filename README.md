@@ -2,6 +2,9 @@
 
 A static, responsive restaurant menu page featuring a dynamic order form.
 
+## Live Demo
+Check out the live deployment here: [https://restaurant-menu-six-sage.vercel.app/](https://restaurant-menu-six-sage.vercel.app/)
+
 ## Features
 - **Menu Display:** Showcases menu items with attractive images and descriptions.
 - **Order Form:** Allows users to select dishes and specify quantities.
