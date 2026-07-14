@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-This project is a solo assignment for Codoc IT Ltd.'s Intern Development Programme. As such, external contributions are not currently being accepted. However, the project adheres to the following internal development standards:
+Thank you for your interest in contributing! Since this is a small personal project, the guidelines are kept simple.
 
 ## Branch Naming Convention
 Branches are prefixed according to the nature of the work being done:
