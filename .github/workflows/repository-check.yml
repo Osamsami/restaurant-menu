@@ -1,0 +1,34 @@
+name: Repository Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate-repository:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files exist
+        run: |
+          test -f index.html || (echo "Missing index.html" && exit 1)
+          test -f style.css || (echo "Missing style.css" && exit 1)
+          test -f script.js || (echo "Missing script.js" && exit 1)
+          test -f README.md || (echo "Missing README.md" && exit 1)
+          test -f .gitignore || (echo "Missing .gitignore" && exit 1)
+          test -f CONTRIBUTING.md || (echo "Missing CONTRIBUTING.md" && exit 1)
+          test -f CHANGELOG.md || (echo "Missing CHANGELOG.md" && exit 1)
+          test -f LICENSE || (echo "Missing LICENSE" && exit 1)
+          test -f docs/assignment.md || (echo "Missing docs/assignment.md" && exit 1)
+
+      - name: Print latest 5 commits
+        run: git log -n 5
